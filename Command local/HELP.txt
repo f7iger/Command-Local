@@ -1,0 +1,37 @@
+NAME
+	CmdLocal.sh  - Make your shell script directory global
+
+SYNOPSIS
+	./CmdLocal.sh [option]... 
+	bash CmdLocal.sh [option]...
+
+DESCRIPTION
+	The script when executed adds the current path (autal directory) to the configuration file of the "bash" shell interpreter ("bash.bashrc") 
+	thus making the scripts visible from the directory in question in the global scope of the terminal global files.
+	Make the command executable : 	
+					chmod u+x CmdLocal.sh
+	
+	Run the command just once and you're done ;)
+				+-----------------------------------------------+
+				|  	 Run as ROOT so there is no error!	|
+				+-----------------------------------------------+
+
+ERRO
+	The command displays an error message and if not run as root, as the configuration file bash.bashrc requires write permissions. A small log is 	      created each time the script is run ...
+
+OPTIONS
+	-r	Autoromeve the Script CmdLocal 
+
+	-rl 	Remove file log's	
+
+	-h	Prints help file on the screen.
+
+EXIT STATUS
+      	0	if OK.
+       	1	Se alguma string for encontrada porém não for Útil.
+      	2 	Algum outro erro
+
+AUTHOR 
+	Written by Fernando 7iger ----- <https://github.com/f7iger>
+
+Send me a message on Git if you have any questions. Thanks! ;)
